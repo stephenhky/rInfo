@@ -1,0 +1,11 @@
+Package: rInfo
+Type: Package
+Title: R Package for Information Metrics
+Version: 0.1.0
+Author: Kwan-Yuet Ho, Ph.D.
+Maintainer: Kwan-Yuet Ho, Ph.D. <stephenhky@yahoo.com.hk>
+Description: R Package for Information Metrics
+    Given probability distributions, calculate various information metrics.
+License: MIT
+Encoding: UTF-8
+LazyData: true
