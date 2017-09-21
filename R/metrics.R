@@ -29,3 +29,13 @@ KLD<- function(p1vector, p2vector) {
 JSD<- function(p1vector, p2vector) {
   0.5*KLD(p1vector, 0.5*(p1vector+p2vector))+0.5*KLD(p2vector, 0.5*(p1vector+p2vector))
 }
+
+#' Compute the entropy
+#'
+#' @param pvector a vector of probability distribution
+#' @return von Neumann entropy
+#' @export
+entropy<- function(pvector) {
+  normalized.pvector<- normalize.pvector(pvector)
+  - sum(normalized.pvector * log(normalized.pvector), na.rm = TRUE)
+}
