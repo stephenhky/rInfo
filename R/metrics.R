@@ -36,6 +36,7 @@ JSD<- function(p1vector, p2vector) {
 #' @return von Neumann entropy
 #' @export
 entropy<- function(pvector) {
+  pvector[ is.na(pvector)]<- 0
   normalized.pvector<- normalize.pvector(pvector)
   - sum(normalized.pvector * log(normalized.pvector), na.rm = TRUE)
 }
